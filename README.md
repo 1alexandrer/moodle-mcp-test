@@ -38,8 +38,9 @@ See [Getting Your Token](#getting-your-token) below. You'll need this for any in
 
 After deploying, set `MOODLE_URL` and `MOODLE_TOKEN` as [secrets in the CF dashboard](https://dash.cloudflare.com/) or via:
 ```bash
-wrangler secret put MOODLE_URL
-wrangler secret put MOODLE_TOKEN
+npx wrangler secret put MOODLE_URL
+npx wrangler secret put MOODLE_TOKEN
+npm run deploy
 ```
 Your URL will be `https://moodle-mcp.<your-subdomain>.workers.dev`.
 
